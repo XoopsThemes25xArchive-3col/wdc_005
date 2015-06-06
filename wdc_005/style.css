@@ -1,0 +1,234 @@
+/* 
+Theme Name: WDC_005
+Description: WDC_005 developed by WebdesignCreators
+Version: 2.1
+Date: June 10th, 2009
+Author: WebdesignCreators
+Author URL: http://www.Webdesigncreators.com
+*/
+
+/*============== Start WDC special styles for WDC_005 =================*/
+
+html, body {color: #000000; font-size:9pt; font-family: Verdana, Arial, Helvetica, sans-serif;  background: #c2ba95 url(images/bg/wdc_005_bg.gif) repeat-x;}
+#wdc_main {width:900px; margin-left:auto; margin-right:auto;}
+#wdc_header {width:900px; height:188px; margin-left:auto; margin-right:auto; background: url(images/header/wdc_005_header_bg.gif) no-repeat;}
+#wdc_header_logo {float:left; margin-top:40px; margin-left:35px; width:196px; line-height:95px; height:95px; vertical-align:middle;}
+#wdc_header_logo_flames {float:left; margin-top:-30px; margin-left:15px; height:100px; vertical-align:middle;}
+#wdc_header_slogan {float:left; margin-top:-20px; color: #929191;}
+#wdc_header_sitename {float:left; margin-top:100px; vertical-align:middle;}
+#wdc_header_sitename a {text-align: left; font-size: 2.5em; font-weight: bold; color: #d1d0d0;}
+#wdc_header_sitename a:hover {color: #075a99;}
+#wdc_header_slogan_bg {float:right; width:500px; height:150px; margin-top:30px; margin-right:40px; vertical-align:middle; background: url(images/header/wdc_005_header_slogan_bg.gif) no-repeat;}
+#wdc_content {width:900px; margin-left:auto; margin-right:auto; margin-top:15px; margin-bottom:10px;}
+#wdc_content_righttop {float:right; background: url(images/content/wdc_005_content_bg_top_right.gif) top right no-repeat; margin:0; padding:0;}
+#wdc_content_lefttop {float:left; background: url(images/content/wdc_005_content_bg_top_left.gif) top left no-repeat; margin:0; padding:0;}
+#wdc_content_rightbottom {float:right; background: url(images/content/wdc_005_content_bg_bottom_right.gif) bottom right no-repeat; margin:0; padding:0;}
+#wdc_content_leftbottom {float:left; background: url(images/content/wdc_005_content_bg_bottom_left.gif) bottom left no-repeat; margin:0; padding:0;}
+#wdc_content_no_leftblock_no_rightblock {float:left; width:96%; margin-bottom:20px; margin-left:15px; height:auto; line-height:100%; background-color:transparent;} 
+#wdc_content_leftblock {float:right; width:75%; margin-bottom:20px; margin-right:25px; height:auto; line-height:100%; background-color:transparent;} 
+#wdc_content_rightblock {float:left; width:75%; margin-left:25px; margin-bottom:20px; height:auto; line-height:100%; background-color:transparent;} 
+#wdc_content_leftblock_rightblock {float:left; width:57%; height:auto; margin-bottom:20px; line-height:100%; background-color:transparent; margin-right:10px;} 
+#wdc_footer {width:900px; margin-left:auto; margin-right:auto; margin-top:15px; margin-bottom:10px;}
+#wdc_footer_righttop {float:right; background: url(images/footer/wdc_005_footer_bg_top_right.gif) top right no-repeat; margin:0; padding:0;}
+#wdc_footer_lefttop {float:left; background: url(images/footer/wdc_005_footer_bg_top_left.gif) top left no-repeat; margin:0; padding:0;}
+#wdc_footer_rightbottom {float:right; background: url(images/footer/wdc_005_footer_bg_bottom_right.gif) bottom right no-repeat; margin:0; padding:0;}
+#wdc_footer_leftbottom {float:left; background: url(images/footer/wdc_005_footer_bg_bottom_left.gif) bottom left no-repeat; margin:0; padding:0;}
+#wdc_footerbar {width:900px; height:100%; padding-top:15px; padding-bottom:25px; margin-left:auto; margin-right:auto; text-align:center; margin-top:10px; vertical-align:middle;}
+#wdc_banner {float:left; margin-left:auto; margin-right:auto; text-align:center; padding-top:10px;}
+#wdc_ads {line-height:100px; margin-top:10px; text-align:center; vertical-align:middle; margin-bottom:10px;}
+
+/*============== End WDC special styles for WDC_005 =================*/
+
+/*============== Start link styles Header menu for WDC_005 =================*/
+
+#wdc_navbar {padding-left:9px; height:49px; width:900px; margin-bottom:10px;}
+#wdc_navbar_links {float:left; line-height:40px; vertical-align:middle;}
+#wdc_navbar_links a {height:49px; width:126px; background: url(images/navi/wdc_005_navi_bg.gif) no-repeat;}
+#wdc_navbar_links a:hover {background-position:0 -49px;}
+#wdc_navbar_links .active {float:left; font-size:1.1em; color:#000000; text-align:center; height:49px; width:126px; background-position:0 -98px;}
+
+a.main_link {height:49px; width:126px; float:left; text-align:center; margin-bottom:10px; font-size:1.1em; font-weight:bold; color: #929191;}
+a.main_link:hover {color: #075a99;}
+
+/*============== Start link styles Header menu for WDC_005 =================*/
+
+
+/*============== Start link styles for WDC_005 =================*/
+
+a {color: #3db3c8; text-decoration: none; font-weight: bold; background-color: transparent;}
+a:hover {color: #044e8f}
+a.header_slogan {text-align: left; font-size: 2.5em; font-weight: bold; color: #f93915;}
+a.header_slogan:hover {color: #e04d31;}
+
+/*============== End link styles for WDC_005 =================*/
+
+/*============== Start text styles for WDC_005 =================*/
+
+h1 {font-size:1.8em; color:#a3a3a3; font-weight: bold;}
+h2 {font-size:1.3em;}
+h3 {font-size:1.2em;}
+h4 {font-size:1.1em;}
+h5 {font-size:1em;}
+ul { margin: 2px; padding: 2px; list-style: disc inside; text-align: left;}
+ol { margin: 2px; padding: 2px; list-style: decimal inside; text-align: left;}
+li { margin-left: 2px; color: #3f2f2f;}
+
+/*============== End text styles for WDC_005 =================*/
+
+/*============== Start Xoops block styles for WDC_005 =================*/
+
+#leftcolumn {float:left; width:19%; font-size:1.1em; padding-left:20px; padding-right:5px; }
+#leftcolumn .blockTitle {background: url(images/blocks/all/wdc_005_star.gif) no-repeat;	background-position: left;	padding-left: 17px;	color: #075a99;	font-size: 1.1em; margin-top:20px;}
+#leftcolumn .blockTitle:first-letter{font-size:1.2em;}
+#leftcolumn .blockContent {padding-left:0px; padding-right:0px; padding-bottom:10px; padding-top:10px; text-align:left; line-height: 1.2em; border-bottom: 1px solid #e1e3e3;}
+
+#centercolumn {float:left; width:100%; font-size: 1em; margin-left:10px; margin-top:22px; border-left: 0px solid #e1e3e3; border-right: 0px solid #e1e3e3;}
+#centercolumn th {background-color: #c0c0c0; color: #3f2f2f; vertical-align: middle; padding-top:5px; padding-bottom:5px;}
+#centercolumn th a {background-color: #c0c0c0; color: #3f2f2f; vertical-align: middle; padding-top:5px; padding-bottom:5px;}
+#centercolumn th a:hover {background-color: #4abdda; color: #e04d31; vertical-align: middle; padding-top:5px; padding-bottom:5px;}
+
+#centerCcolumn, #bottomCcolumn {float:left; width:100%; font-size:1.1em; padding-left:0px; padding-top:0px; margin-top:10px;}
+#centerCcolumn .blockTitle, #bottomCcolumn .blockTitle {background: url(images/blocks/all/wdc_005_star.gif) no-repeat;	background-position: left;	padding-left: 17px;	color: #075a99;	font-size: 1.1em; margin-bottom:10px;}
+#centerCcolumn .blockTitle:first-letter, #bottomCcolumn .blockTitle:first-letter {font-size:1.2em;}
+#centerCcolumn .blockContent, #bottomCcolumn .blockContent {padding-bottom:10px; text-align:left; line-height: 1.2em; border-bottom: 1px solid #e1e3e3;}
+
+#centerLcolumn, #bottomLcolumn {float:left; width:48%; font-size:1.1em; padding-right:5px; padding-top:20px; }
+#centerLcolumn .blockTitle, #bottomLcolumn .blockTitle {background: url(images/blocks/all/wdc_005_star.gif) no-repeat;	background-position: left;	padding-left: 17px;	color: #075a99;	font-size: 1.1em; margin-bottom:10px;}
+#centerLcolumn .blockTitle:first-letter, #bottomLcolumn .blockTitle:first-letter {font-size:1.2em;}
+#centerLcolumn .blockContent, #bottomLcolumn .blockContent {padding-bottom:10px; text-align:left; line-height: 1.2em; border-bottom: 1px solid #e1e3e3;}
+
+#centerRcolumn, #bottomRcolumn {float:left; width:48%; font-size:1.1em; padding-left:5px; padding-top:20px; }
+#centerRcolumn .blockTitle, #bottomRcolumn .blockTitle {background: url(images/blocks/all/wdc_005_star.gif) no-repeat;	background-position: left;	padding-left: 17px;	color: #075a99;	font-size: 1.1em; margin-bottom:10px;}
+#centerRcolumn .blockTitle:first-letter, #bottomRcolumn .blockTitle:first-letter {font-size:1.2em;}
+#centerRcolumn .blockContent, #bottomRcolumn .blockContent {padding-bottom:10px; text-align:left; line-height: 1.2em; border-bottom: 1px solid #e1e3e3;}
+
+#content {width:100%; float:left; padding-left:5px; padding-right:5px; text-align:left; padding-top:5px;}
+
+#rightcolumn {float:right; width:18%; font-size:1.1em; margin-top:22px; margin-right:15px;}
+#rightcolumn .blockTitle {background: url(images/blocks/all/wdc_005_star.gif) no-repeat;	background-position: left;	padding-left: 17px;	color: #075a99;	font-size: 1.1em; margin-bottom:10px;}
+#rightcolumn .blockTitle:first-letter {font-size:1.2em;}
+#rightcolumn .blockContent {padding-left:0px; padding-right:10px; padding-bottom:10px; text-align:left; line-height: 1.2em; border-bottom: 1px solid #e1e3e3;}
+
+#mainmenu a {background-color: transparent; display: block; padding: 4px; color:#3db3c8;}
+#mainmenu a:hover {background-color: transparent; color:#044e8f;}
+#mainmenu a.menuTop {padding-left: 3px;}
+#mainmenu a.menuMain {padding-left: 3px;}
+#mainmenu a.menuSub {padding-left: 9px;}
+
+#usermenu {	font-size : .9em;}
+#usermenu a {background-color:transparent; display:block; margin:0; padding:2px;font-weight :normal; color:#3db3c8;}
+#usermenu a:hover {background-color: transparent; color:#044e8f;}
+#usermenu a.menuTop {}
+#usermenu a.menuMain {}
+#usermenu a.highlight {}
+
+/*============== End Xoops block styles for WDC_005 =================*/
+
+/*============== Start Xoops styles for WDC_005 =================*/
+
+table {width: 100%;}
+table td {padding: 0; border-width: 0; vertical-align: top; }
+.table_bg {}
+
+.item {border: 1px solid #dcdbdb;}
+.itemHead {padding: 3px; background-color: #dcdbdb; color: #fff;}
+.itemInfo {text-align: right; padding: 3px; background-color: #dcdbdb}
+.itemTitle a {font-size: 1.2em; font-weight: bold; font-variant: small-caps; color: #fff; background-color: transparent;}
+.itemPoster {font-size: .9em; font-style:italic;}
+.itemPostDate {font-size: .9em; font-style:italic;}
+.itemStats {font-size: .9em; font-style:italic;}
+.itemBody {padding-left: 5px;}
+.itemText {margin-top: 5px; margin-bottom: 5px; line-height: 1.5em;}
+.itemText:first-letter {font-size: 1.3em; font-weight: bold;}
+.itemFoot {text-align: right; padding: 3px; background-color: #dcdbdb;}
+.itemAdminLink {font-size: .9em;}
+.itemPermaLink {font-size: .9em;}
+
+#header {margin:0; padding:0;	height:80px; background:#f93915; padding:2px;	color:#fff;	border:1px solid #f93915;}
+#headerbanner {width: 100%; vertical-align: middle; text-align:center;}
+#headerlogo img {padding: 0;}
+#headerbar {border-bottom: 1px solid #f93915;}
+
+fieldset {border: 1px solid #858585;}
+
+caption {font-weight: bold;}
+th, thead {padding :2px; color:#484848; vertical-align : middle; background-color:#e8e8e8;}
+.outer {background-color:#e8e8e8; line-height:21px; color:#000000; border: 1px solid #858585; margin-top:10px}
+.head {font-weight:bold;	color:#373737;	height:24px; line-height:22px; text-align:left;	background-color:#dcdbdb;  border: 1px solid #666666;}
+.even {background-color:#dcdbdb;	padding:5px;	color:#484848;	border: 1px solid #858585;}
+.odd {background-color:#e8e8e8;	padding:5px;	color:#484848;	border: 1px solid #858585;}
+.left {font-weight:bold;}
+.foot {background-color: #ffffff; font-weight: bold; border: 1px solid #858585;}
+tr.even td {background-color: #ffffff; border: 1px solid #858585;}
+tr.odd td {background-color: #ffffff; border: 1px solid #858585;}
+tr.even td {padding: 5px;}
+tr.odd td {padding: 5px; border: 1px solid #858585;}
+tr.foot td {padding: 5px; color:inherit; font-weight: bold;}
+
+.errorMsg,.confirmMsg, .resultMsg  { padding: .8em; text-align:center; margin-bottom: 1em; border: 2px solid #ddd;}
+.errorMsg  {background-color: #FBE3E4; color: #D12F19; border-color: #FBC2C4; }
+.confirmMsg {background-color: #FFF6BF; color: #817134; border-color: #FFD324; }
+.resultMsg {background-color: #E6EFC2; color: #529214; border-color: #C6D880; }
+.errorMsg a {background-color: transparent; color: #D12F19; }
+.confirmMsg a {background-color: transparent; color: #817134; }
+.successMsg a {background-color: transparent; color: #529214; }
+
+.xoopsCode {background: #fff; border: 1px inset #000080; font-family: "Courier New",Courier,monospace; padding: 0 6px 6px 6px; height: 200px; overflow: auto; font-size:.9em;}
+.xoopsQuote {background: #fff; border: 1px inset #000080; font-family: "Courier New",Courier,monospace; padding: 0 6px 6px 6px; font-size:.9em;}
+blockquote {font-style : italic; line-height:1.4em;} 
+
+.comTitle {color:#484848; font-weight: bold; margin-bottom: 2px;}
+.comText {padding: 2px;}
+.comUserStat {font-size: .9em; color: #484848; font-weight:bold; border: 1px solid #858585; background-color: #dcdbdb; margin: 2px; padding: 2px;}
+.comUserStatCaption {font-weight: normal;}
+.comUserStatus {margin-left: 2px; margin-top: 10px; color: #858585; font-weight:bold; font-size: .9em;}
+.comUserRank {margin: 2px;}
+.comUserRankText {font-size: .9em;font-weight:bold;}
+.comUserRankImg {border: 0;}
+.comUserName a {color: #484848;}
+.comUserImg {margin: 2px;}
+.comDate {font-weight: normal; font-style: italic; font-size: .8em;}
+.comDateCaption {font-weight: bold; font-style: normal;}
+
+.style1 {border-color: #f93915; border-width: 0;}
+
+/*============== End Xoops styles for WDC_005 =================*/
+
+/*============== Start input styles for WDC_005 =================*/
+
+input.formButton {}
+
+.xo-formButtons, .xo-formButton, button {padding:.25em; text-align:center;}
+
+input[type=submit], input[type=reset], input[type=button], .xo-formbuttons, .formButton, button {
+margin:                 3px 0 3px 0;
+background:             #3db3c8;
+color:                  #ffffff;
+font-size:              .9em;
+font-weight:            bold;
+border:                 1px solid #075a99;
+cursor:                 pointer;
+}
+input[type=submit]:hover, input[type=reset]:hover, input[type=button]:hover,.xo-formbuttons:hover, .formButton:hover, button:hover  {
+margin:                 3px 0 3px 0;
+background:             #ffffff;
+color:                  #3db3c8;
+font-size:              .9em;
+font-weight:            bold;
+border:                 1px solid #075a99;
+cursor:                 pointer;
+}
+input{border: 1px solid #075a99;	font: 11px verdana, arial, helvetica, sans-serif;	background-color: #dcdbdb;}
+input:hover{border: 1px solid #075a99;	font: 11px verdana, arial, helvetica, sans-serif;	background-color: #ededed;}
+input:focus{border: 1px solid #075a99;	font: 11px verdana, arial, helvetica, sans-serif;	background-color: #ffffff;}
+
+/*============== End input styles for WDC_005 =================*/
+
+/*============== Start Styles in userbar.html for WDC_005 =================*/
+
+#xo-userbar {bottom:3px; text-align:left;}
+#xo-userbar form {display:inline; padding:0;}
+#xo-userbar img {width:21px; height:20px;}
+#xo-uname {font-weight:bold; font-size:1.1em;}
+
+/*============== End Styles in userbar.html for WDC_005 =================*/

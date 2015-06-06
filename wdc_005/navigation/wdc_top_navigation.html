@@ -1,0 +1,41 @@
+<div id="wdc_navbar"><div id="wdc_navbar_links">
+
+<{php}>
+global $xoopsModule ;
+$xoops_url = XOOPS_URL ;
+
+$mainmenu_str = "
+
+<!-- Start to edit the links here! Do not touch any other part of the menu! -->
+<!-- Start copy the links if you need more links, but don´t touch the class! -->
+
+<a href='$xoops_url/' class='main_link'>Home</a>
+<a href='$xoops_url/modules/news/' class='main_link'>News</a>
+<a href='$xoops_url/modules/newbb/' class='main_link'>Forum</a>
+<a href='$xoops_url/modules/PDlinks/' class='main_link'>Links</a>
+<a href='$xoops_url/modules/PDdownloads/' class='main_link'>Downloads</a>
+<a href='$xoops_url/modules/myalbum/' class='main_link'>Album 1</a>
+<a href='$xoops_url/modules/extgallery/' class='main_link'>Album 2</a>
+
+<!-- End copy the links if you need more links, but don´t touch the class! -->
+<!-- End to edit the links here! Do not touch any other part of the menu! -->
+
+
+    " ;
+
+$highlightString = "class='active'";
+
+if( isset( $xoopsModule ) && is_object( $xoopsModule ) ) {
+	$dirname = $xoopsModule->getVar( 'dirname' ) ;
+	$mainmenu_str = str_replace( "/modules/$dirname/'" , "/modules/$dirname/' ".
+                               $highlightString , $mainmenu_str ) ;
+} else {
+	$mainmenu_str = str_replace( "class='main_link'>Home</a>" , "' ".$highlightString.">Home</a>" , 
+                               $mainmenu_str ) ;
+}
+
+echo $mainmenu_str ;
+<{/php}>
+
+
+</div></div>

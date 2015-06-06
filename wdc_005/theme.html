@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+
+<!-- #######################################################################################################################
+WDC_005 [x]html-Layout and Themefile is copyright 2009 by <a href="http://www.webdesigncreators.com">WebdesignCreators</a>
+please do not remove these lines. It denied by license!
+########################################################################################################################-->
+
+<head>
+	<!-- Assign Theme name -->
+	<{assign var=theme_name value=$xoTheme->folderName}>
+
+    <!-- Title and meta -->
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+    <meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+    <title><{if $xoops_pagetitle !=''}><{$xoops_pagetitle}> - <{/if}><{$xoops_sitename}></title>
+    <meta name="robots" content="<{$xoops_meta_robots}>" />
+    <meta name="keywords" content="<{$xoops_meta_keywords}>" />
+    <meta name="description" content="<{$xoops_meta_description}>" />
+    <meta name="rating" content="<{$xoops_meta_rating}>" />
+    <meta name="author" content="WebdesignCreators" />
+    <meta name="copyright" content="WebdesignCreators" />
+    <meta name="generator" content="XOOPS" />
+
+	<!-- Rss -->
+	<link rel="alternate" type="application/rss+xml" title="" href="<{xoAppUrl backend.php}>" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/ico" href="<{xoImgUrl icons/favicon.ico}>" />
+	
+    <!-- Sheet Css -->
+	<link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="<{xoAppUrl xoops.css}>" />
+	<link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="<{xoImgUrl pngfix/pngHack.css}>" />
+	<link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="<{xoImgUrl style.css}>" />
+
+    <!-- customized header contents -->
+	<{$xoops_module_header}>
+
+  <!--[if lt IE 7]>
+	<link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="<{xoImgUrl styleie.css}>" />
+  <![endif]-->
+  <!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="<{xoImgUrl styleie.css}>" />
+  <![endif]-->
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-8984695-3");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</head>
+
+<body>
+
+<div id="wdc_main">
+<!-- Start header -->
+<div id="wdc_header">
+<div id="wdc_header_logo"><img src="<{xoImgUrl images/header/wdc_logo.gif}>" alt="WebdesignCreators Logo" width="196px" height="95px" /><div id="wdc_header_slogan"><{$xoops_pagetitle}></div></div>
+<div id="wdc_header_slogan_bg"><div id="wdc_header_logo_flames"><img src="<{xoImgUrl images/header/wdc_005_flames_blue.png}>" alt="WDC_005 header Logo" width="105px" height="164px" /></div>
+<div id="wdc_header_sitename"><a href="<{$xoops_url}>"><{$xoops_sitename}></a></div>
+</div>
+</div>
+<!-- End header -->
+
+<!-- Start top navigation -->
+<{includeq file="$theme_name/navigation/wdc_top_navigation.html"}>
+<!-- End top navigation -->
+
+<!-- Start advertisement -->
+<div id="wdc_ads">
+<script type="text/javascript"><!--
+google_ad_client = "pub-6064320604098631";
+/* 728x90, Erstellt 17.04.09 */
+google_ad_slot = "5100477693";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+<!-- End advertisement -->
+
+<div style="clear:both;"></div>
+
+
+<div id="wdc_content_righttop">
+<div id="wdc_content_lefttop">
+<div id="wdc_content_rightbottom">
+<div id="wdc_content_leftbottom">
+<div id="wdc_content">
+
+<!-- Start left blocks loop -->
+<{if $xoops_showlblock == '1'}>
+<div id="leftcolumn">
+<{foreach item=block from=$xoBlocks.canvas_left}>
+<{includeq file="$theme_name/blocks/wdc_theme_blockleft.html"}>
+<{/foreach}>
+</div>
+<{/if}>
+<!-- End left blocks loop -->
+
+<!-- Start selection of the content div by showing blocks -->
+
+<{if $xoops_showlblock == '1' && $xoops_showrblock == ''}>
+<!-- Display content div if left blocks but no right blocks -->
+<div id="wdc_content_leftblock">
+<{/if}>
+
+<{if $xoops_showlblock == '' && $xoops_showrblock == '1'}>
+<!-- Display content div if no left blocks but right blocks -->
+<div id="wdc_content_rightblock">
+<{/if}>
+
+<{if $xoops_showlblock == '1' && $xoops_showrblock == '1'}>
+<!-- Display content div if left blocks and right blocks -->
+<div id="wdc_content_leftblock_rightblock">
+<{/if}>
+
+<{if $xoops_showlblock == '' && $xoops_showrblock == ''}>
+<!-- Display content div if no left blocks neither right blocks -->
+<div id="wdc_content_no_leftblock_no_rightblock">
+<{/if}>
+
+<!-- End selection of the content div by showing blocks -->
+
+<!-- Display center blocks if any -->
+<{if $xoBlocks.page_topleft or $xoBlocks.page_topcenter or $xoBlocks.page_topright}>
+
+<div id="centercolumn">
+
+<!-- Start center-center blocks loop -->
+<div id="centerCcolumn">
+<{foreach item=block from=$xoBlocks.page_topcenter}>
+<{includeq file="$theme_name/blocks/wdc_theme_blockcenter_c.html"}>
+<{/foreach}>
+</div>
+<!-- End center-center blocks loop -->
+
+<!-- Start center-left blocks loop -->
+<div id="centerLcolumn">
+<{foreach item=block from=$xoBlocks.page_topleft}>
+<{includeq file="$theme_name/blocks/wdc_theme_blockcenter_l.html"}>
+<{/foreach}>
+</div>
+<!-- End center-left blocks loop -->
+
+<!-- Start center-right blocks loop -->
+<div id="centerRcolumn">
+<{foreach item=block from=$xoBlocks.page_topright}>
+<{includeq file="$theme_name/blocks/wdc_theme_blockcenter_r.html"}>
+<{/foreach}>
+</div>
+<!-- End center-right blocks loop -->
+
+<!-- End center top blocks loop -->
+<{/if}>
+
+<!-- Start content module page -->
+<{if $xoops_contents}>
+<div id="content"><{$xoops_contents}></div>
+<{/if}>
+<!-- End content module page -->
+
+<!-- Start center-center blocks loop -->
+<div id="bottomCcolumn">
+<{foreach item=block from=$xoBlocks.page_bottomcenter}>
+<{includeq file="$theme_name/blocks/wdc_theme_blockcenter_c.html"}>
+<{/foreach}>
+</div>
+<!-- End center-center blocks loop -->
+
+<!-- Start center-left blocks loop -->
+<div id="bottomLcolumn">
+<{foreach item=block from=$xoBlocks.page_bottomleft}>
+<{includeq file="$theme_name/blocks/wdc_theme_blockcenter_l.html"}>
+<{/foreach}>
+</div>
+<!-- End center-left blocks loop -->
+
+<!-- Start center-right blocks loop -->
+<div id="bottomRcolumn">
+<{foreach item=block from=$xoBlocks.page_bottomright}>
+<{includeq file="$theme_name/blocks/wdc_theme_blockcenter_r.html"}>
+<{/foreach}>
+</div>
+<!-- End center-right blocks loop -->
+<div style="clear:both;"></div>
+</div></div>
+
+<{if $xoops_showrblock == '1'}>
+<div id="rightcolumn">
+<!-- Start right blocks loop -->
+<{foreach item=block from=$xoBlocks.canvas_right}>
+<{includeq file="$theme_name/blocks/wdc_theme_blockright.html"}>
+<{/foreach}>
+<!-- End right blocks loop -->
+</div>
+<{/if}>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="clear:both;"></div>
+
+<div id="wdc_footer">
+<div id="wdc_footer_righttop">
+<div id="wdc_footer_lefttop">
+<div id="wdc_footer_rightbottom">
+<div id="wdc_footer_leftbottom">
+<div id="wdc_footerbar"><{$xoops_footer}> <!-- Webmaster, dont remove this text. It denied by license! -->Design by <a href="http://www.Webdesigncreators.com" target="_blank">WebdesignCreators</a><!--End  "design by" text! -->
+<!-- Start banner -->
+<br /><br /><{$xoops_banner}><br /><{$smarty.const._WDC_TESTED}><br /><br />
+<a href="http://www.xoops.org"><img src="<{xoImgUrl /images/footer/xoops_little.gif}>" alt="Xoops CMS" width="80px" height="15px" /></a>&nbsp;<a href="http://www.webdesigncreators.com"><img src="<{xoImgUrl /images/footer/WDC_little.gif}>" alt="WDC" width="80px" height="15px" /></a>&nbsp;<a href="http://validator.w3.org/check?uri=referer"><img src="<{xoImgUrl /images/footer/XHTML.png}>" alt="XHTML valdidated" width="80px" height="15px" /></a>&nbsp;<a href="http://jigsaw.w3.org/css-validator/check/referer"><img src="<{xoImgUrl /images/footer/CSS.png}>" alt="CSS 2.1 validated" width="80px" height="15px" /></a>&nbsp;<a href="http://www.microsoft.com/uk/windows/internet-explorer/default.aspx"><img src="<{xoImgUrl /images/footer/IE_little.png}>" alt="Tested in IE" width="80px" height="15px" /></a>&nbsp;<a href="http://www.mozilla-europe.org/en/"><img src="<{xoImgUrl /images/footer/Firefox_little.png}>" alt="Tested in Firefox" width="80px" height="15px" /></a>&nbsp;<a href="http://www.opera.com/index.dml"><img src="<{xoImgUrl /images/footer/Opera_little.png}>" alt="Tested in Opera" width="80px" height="15px" /></a>
+<!-- End banner -->
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>
